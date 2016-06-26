@@ -1,0 +1,296 @@
+body {
+	background: #E8DDCB;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color:black;
+}
+
+#header {
+	width: 100%;
+	height: 17.2%;
+	border: 0 0 1px 0 solid black;
+	background: #fff;
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+.logo {
+	float: left;
+	margin: 8px 0px 5px 10px;
+}
+
+.title{
+	float: right;
+	margin: 12px 10px 10px 10px;
+	height: 75%;
+}
+
+#horizontal-nav {
+	position: fixed;
+	clear: both;
+	width: 100%;
+	top: 13%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background: #031634;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+#horizontal-nav ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#horizontal-nav li {
+	float: right;
+	padding: 10px 30px 10px 10px;
+	text-align: center;
+	border-right: 1px solid black;
+	border-left: 1px solid black;	
+
+}
+
+#horizontal-nav ul li a {
+	font-size: 12px;
+	float: center;
+	padding: 0 0 0 20px;
+	display:block;
+	color:white;
+	text-decoration: none;
+}
+
+#horizontal-nav ul li:hover{
+	background-color: black;
+}
+#content-area{
+	position:absolute;
+	width: 100%;
+	top:17.2%;
+}
+#vertival-nav {
+	clear: both;
+	height: 100%;
+	top: 17.2%;
+	position: fixed;
+	margin: 0: ;
+	padding: 0;
+	border-right: 10px solid #031634;
+	background: #fff;
+	float:left;
+	z-index: 1;
+}
+
+#vertival-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#vertival-nav ul li {
+	float: left;
+	width:100%;
+	text-align: center;
+	padding:0;
+	border-bottom: 3px solid #031634;
+}
+
+#vertival-nav ul li a {
+	display:inline-block;
+	text-decoration: none;
+	color:black;
+}
+
+#vertival-nav ul li:hover{
+	background-color: #ff9900;
+	color:black;
+}
+
+#vertival-nav ul li.active{
+	background-color:#009933;
+	color:white;
+}
+
+.icons {
+	width: 65%;
+	padding-bottom:5px;
+}
+
+#inner-content {
+	float:right;	
+}
+
+#energygraphs {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 150px;
+	width: 1500px;
+	top: 25%;
+	border: 1px;
+}
+
+#notifications {
+	float:left;
+	color: black;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 1500px;
+}
+
+.list-group-item{
+	text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	font-size: 17px;
+}
+
+th {
+}
+
+.panel-heading{
+	text-align: right;
+	font-size: 17px;
+	background-color: #4CAF50;
+}
+
+td.notification-event{
+	
+}
+
+td.notification-time{
+	text-align:left;
+}
+
+#inner-content .container-fluid .row .col-xs-2 {
+	margin: 10px 10px 10px 10px;
+	background-color:whitesmoke;
+	border: 3px solid black;
+} 
+#inner-content .container-fluid .row .col-xs-2 .room{
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+} 
+
+#inner-content .container-fluid .row .col-xs-2 .lightbulb{
+	background-color: whitesmoke;
+} 
+
+#inner-content .container-fluid .row .col-xs-2 .lightbulb .light-icon{
+	width: 80%;
+	display:block;
+   	margin:auto;
+} 
+#inner-content .container-fluid .row .col-xs-2 .calendar{
+	margin: 10px 10px 10px 10px;
+} 
+
+#inner-content .container-fluid .row .col-xs-2 .spinner{
+
+	text-align: center;
+} 
+
+#inner-content .container-fluid .row .col-xs-2 .spinner .numval{
+	position:relative;
+	display:block;
+	margin:auto;
+	float:left;
+	width:90%;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+	
+
+} 
+
+#inner-content .container-fluid .row .col-xs-2 .slider-toggle-container{
+	margin: 10px 10px 10px 10px;
+} 
+
+.switch-comment{
+	text-align: center;
+	float:left;
+	margin-top:5px;
+	font-size: 17px;
+}
+
+.temp-comment{
+	font-size: 17px;
+}
+
+.switch {
+  position: relative;
+  float:right;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: green;
+  /*colour transition speed - to blue*/
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  /*colour transition speed - to dark*/
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: red;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
